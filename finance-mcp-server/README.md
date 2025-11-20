@@ -41,8 +41,8 @@ exchange rates, historical prices, and compute portfolio values.
 After starting the server, you can test all tools using the example client:
 
 ```bash
-# 1. Health check
-python -c "import requests; r = requests.get('http://localhost:8000/health'); print(r.status_code, r.json())"
+# 1. Health check (Windows - use .venv\Scripts\python.exe, Linux/Mac - use .venv/bin/python)
+.venv\Scripts\python.exe -c "import requests; r = requests.get('http://localhost:8000/health'); print(r.status_code, r.json())"
 
 # 2. List all available tools
 python example_client.py --api-key secret123 --tool list_tools
